@@ -21,17 +21,31 @@ body {
 	@apply font-sans;
 	max-width: 768px;
 	margin: 0 auto;
+	color: #291507;
+	padding: .5rem;
 }
 
 input {
 	background-color: #F6F8FB;
-
-
+	overflow-x: hidden;
 	border: none;
 	outline: none;
+
+	&::placeholder {
+		color: #291507;
+	}
 
 	&:focus {
 		border: none;
 		outline: none;
+	}
+}
+
+.container-input {
+	@apply px-4 py-2 rounded-full max-w-[100px] text-xs bg-white flex items-center justify-center;
+	color: #291507;
+
+	& input {
+		background-color: white;
 	}
 }

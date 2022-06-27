@@ -1,13 +1,14 @@
 
 import { useEffect, useRef, useState } from 'react';
 import './App.scss';
+import HomePage from './pages/HomePage/HomePage';
 
 
 function App() {
 
 	return (
 		<div className="">
-			<h1>Hello world!</h1>
+			<HomePage />
 		</div>
 	)
 }
