@@ -44,8 +44,4 @@ input {
 .container-input {
 	@apply px-4 py-2 rounded-full max-w-[100px] text-xs bg-white flex items-center justify-center;
 	color: #291507;
-
-	& input {
-		background-color: white;
-	}
 }

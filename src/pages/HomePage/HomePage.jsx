@@ -23,7 +23,7 @@ function HomePage() {
 					<h1 className="font-['Mystery_Quest'] text-sm">CatWiki</h1>
 					<p className='text-[10px] font-medium max-w-[135px]'>Get to know more about your cat breed</p>
 					<div className='container-input'>
-						<input type="text" placeholder='Search' />
+						<input className='font-medium bg-white' type="text" placeholder='Search' />
 						<MdSearch className='min-w-[12px]' />
 					</div>
 				</div>
