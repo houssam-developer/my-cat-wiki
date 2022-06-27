@@ -1,0 +1,82 @@
+:root {
+	--breeds-search-flex-gap: .5em;
+	--breeds-search-heading-text: 14px;
+	--breeds-search-description-text: 10px;
+	--breeds-search-container-text: 12px;
+
+	--breeds-search-description-max-w: 135px;
+	--breeds-search-container-max-w: 100px;
+	--breeds-search-container__svg-min-w: 12px;
+
+
+}
+
+.container-breeds-search {
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+
+	& img,
+	& .breeds-search {
+		grid-column: 1 / -1;
+		grid-row: 1 / -1;
+	}
+}
+
+
+.breeds-search {
+	@apply text-white flex flex-col;
+	align-self: center;
+	gap: var(--breeds-search-flex-gap);
+
+	padding-left: calc(2vw + 1em);
+
+	&__heading {
+		@apply font-['Mystery_Quest'];
+		font-size: var(--breeds-search-heading-text);
+	}
+
+	&__description {
+		@apply font-medium;
+
+		font-size: var(--breeds-search-description-text);
+		max-width: var(--breeds-search-description-max-w);
+
+	}
+
+	&__container-input {
+		@apply px-4 py-2 rounded-full bg-white flex items-center justify-center;
+
+		color: #291507;
+		font-size: var(--breeds-search-container-text);
+		max-width: var(--breeds-search-container-max-w);
+
+		&__svg {
+			min-width: var(--breeds-search-container__svg-min-w);
+		}
+	}
+
+	@media screen and (min-width: 400px) {
+		//--breeds-search-heading-text: 1.5rem;
+		--breeds-search-heading-text: min(calc(5vw + 1rem), 50px);
+		--breeds-search-description-text: .9rem;
+		--breeds-search-container-text: 1rem;
+		--breeds-search-flex-gap: 1em;
+
+		--breeds-search-description-max-w: 200px;
+		--breeds-search-container-max-w: 150px;
+		--breeds-search-container__svg-min-w: 20px;
+	}
+
+	// @media screen and (min-width: 768px) {
+	// 	--breeds-search-heading-text: 3rem;
+	// 	--breeds-search-description-text: 1.5rem;
+	// 	--breeds-search-container-text: 1.3rem;
+	// 	--breeds-search-flex-gap: 1.2em;
+
+	// 	--breeds-search-description-max-w: 300px;
+	// 	--breeds-search-container-max-w: 320px;
+	// 	--breeds-search-container__svg-min-w: 20px;
+	// }
+}

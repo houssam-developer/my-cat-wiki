@@ -19,7 +19,7 @@
 
 body {
 	@apply font-sans;
-	max-width: 768px;
+	max-width: 1024px;
 	margin: 0 auto;
 	color: #291507;
 	padding: .5rem;
@@ -39,9 +39,4 @@ input {
 		border: none;
 		outline: none;
 	}
-}
-
-.container-input {
-	@apply px-4 py-2 rounded-full max-w-[100px] text-xs bg-white flex items-center justify-center;
-	color: #291507;
 }
