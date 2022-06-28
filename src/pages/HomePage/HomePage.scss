@@ -2,10 +2,10 @@
 	--breeds-search-flex-gap: .5em;
 	--breeds-search-heading-text: min(calc(5vw + .5rem), 5rem);
 	--breeds-search-description-text: min(calc(1vw + .5rem), 4.5rem);
-	--breeds-search-container-text: min(calc(1vw + .4rem), 4rem);
+	--breeds-search-container-text: min(calc(1vw + .5rem), 4rem);
 
 	--breeds-search-description-max-w: 45%;
-	--breeds-search-container-max-w: 45%;
+	--breeds-search-container-max-w: 40%;
 	--breeds-search-container__svg-min-w: 12px;
 
 
@@ -62,11 +62,29 @@
 	}
 
 	@media screen and (min-width: 500px) {
-
-		--breeds-search-flex-gap: 1.5em;
-
 		--breeds-search-description-max-w: 40%;
 		--breeds-search-container-max-w: 40%;
 		--breeds-search-container__svg-min-w: 20px;
+	}
+
+	@media screen and (min-width: 768px) {
+		--breeds-search-flex-gap: 1.5em;
+	}
+}
+
+.most-searched-breeds__heading {
+	@apply relative pb-1 font-medium;
+
+	width: max-content;
+	font-size: calc(1vw + .8rem);
+
+	&::before {
+		position: absolute;
+		content: "";
+		bottom: 0em;
+		left: 0;
+		border: 2px solid #291507;
+		border-radius: 13px;
+		width: 30%;
 	}
 }
