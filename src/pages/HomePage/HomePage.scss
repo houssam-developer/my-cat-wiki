@@ -1,11 +1,11 @@
 :root {
 	--breeds-search-flex-gap: .5em;
-	--breeds-search-heading-text: 14px;
-	--breeds-search-description-text: 10px;
-	--breeds-search-container-text: 12px;
+	--breeds-search-heading-text: min(calc(5vw + .5rem), 5rem);
+	--breeds-search-description-text: min(calc(1vw + .5rem), 4.5rem);
+	--breeds-search-container-text: min(calc(1vw + .4rem), 4rem);
 
-	--breeds-search-description-max-w: 135px;
-	--breeds-search-container-max-w: 100px;
+	--breeds-search-description-max-w: 45%;
+	--breeds-search-container-max-w: 45%;
 	--breeds-search-container__svg-min-w: 12px;
 
 
@@ -46,37 +46,27 @@
 	}
 
 	&__container-input {
-		@apply px-4 py-2 rounded-full bg-white flex items-center justify-center;
+		@apply px-4 py-2 rounded-full bg-white flex items-center;
 
 		color: #291507;
 		font-size: var(--breeds-search-container-text);
 		max-width: var(--breeds-search-container-max-w);
+
+		input {
+			flex-grow: 1;
+		}
 
 		&__svg {
 			min-width: var(--breeds-search-container__svg-min-w);
 		}
 	}
 
-	@media screen and (min-width: 400px) {
-		//--breeds-search-heading-text: 1.5rem;
-		--breeds-search-heading-text: min(calc(5vw + 1rem), 50px);
-		--breeds-search-description-text: .9rem;
-		--breeds-search-container-text: 1rem;
-		--breeds-search-flex-gap: 1em;
+	@media screen and (min-width: 500px) {
 
-		--breeds-search-description-max-w: 200px;
-		--breeds-search-container-max-w: 150px;
+		--breeds-search-flex-gap: 1.5em;
+
+		--breeds-search-description-max-w: 40%;
+		--breeds-search-container-max-w: 40%;
 		--breeds-search-container__svg-min-w: 20px;
 	}
-
-	// @media screen and (min-width: 768px) {
-	// 	--breeds-search-heading-text: 3rem;
-	// 	--breeds-search-description-text: 1.5rem;
-	// 	--breeds-search-container-text: 1.3rem;
-	// 	--breeds-search-flex-gap: 1.2em;
-
-	// 	--breeds-search-description-max-w: 300px;
-	// 	--breeds-search-container-max-w: 320px;
-	// 	--breeds-search-container__svg-min-w: 20px;
-	// }
 }
