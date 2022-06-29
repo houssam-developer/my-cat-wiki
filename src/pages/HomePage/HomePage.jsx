@@ -36,7 +36,7 @@ function HomePage() {
 
 				<div className='bg-[#E3E1DC] p-4 flex flex-col gap-3 rounded-b-3xl'>
 					<h2 className='most-searched-breeds__heading'>Most Searched Breeds</h2>
-					<p className='text-md font-bold sm:text-lg md:text-xl'>{mostSearchBreedsCount}+ Breeds For you to discover</p>
+					<p className='most-searched-breeds__description'>{mostSearchBreedsCount}+ Breeds For you to discover</p>
 
 					<div>
 						{/* GRID OF CATS */}

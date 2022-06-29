@@ -76,7 +76,7 @@
 	@apply relative pb-1 font-medium;
 
 	width: max-content;
-	font-size: calc(1vw + .8rem);
+	font-size: calc(1vw + .7rem);
 
 	&::before {
 		position: absolute;
@@ -87,4 +87,9 @@
 		border-radius: 13px;
 		width: 30%;
 	}
+}
+
+.most-searched-breeds__description {
+	font-weight: 700;
+	font-size: calc(1vw + .8rem);
 }
