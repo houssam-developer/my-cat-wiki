@@ -122,3 +122,24 @@
 		}
 	}
 }
+
+.container-whyhavecatgrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto 1fr;
+	gap: .5em;
+
+	&__first {
+		border: 2px solid red;
+	}
+
+	&__second {
+		border: 2px solid orange;
+		grid-row: span 2;
+	}
+
+	&__third {
+		border: 2px solid blue;
+		min-height: 200px;
+	}
+}
