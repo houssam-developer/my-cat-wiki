@@ -123,23 +123,35 @@
 	}
 }
 
+.heading-top-before {
+	position: relative;
+	padding-top: .5em;
+
+	&:before {
+		position: absolute;
+		content: "";
+		top: 0;
+		width: 10%;
+		border: 1px solid #291507;
+		border-radius: 13px;
+	}
+}
+
 .container-whyhavecatgrid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, minmax(100px, 250px));
 	grid-template-rows: auto 1fr;
-	gap: .5em;
+	gap: 1em;
 
-	&__first {
-		border: 2px solid red;
-	}
+	&__first {}
 
 	&__second {
-		border: 2px solid orange;
+
 		grid-row: span 2;
 	}
 
 	&__third {
-		border: 2px solid blue;
+
 		min-height: 200px;
 	}
 }
