@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import './HomePage.scss';
 import { MdSearch, MdArrowRightAlt } from "react-icons/md";
 
@@ -115,6 +116,8 @@ function HomePage() {
 					</div>
 				</div>
 			</section>
+
+			<Footer></Footer>
 		</div>
 	)
 }
